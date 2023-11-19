@@ -1,0 +1,16 @@
+<!-- mycontactapp/templates/mycontactapp/contacts.html -->
+{% extends 'mycontactapp/base.html' %}
+
+{% block title %}Contacts - {{ block.super }}{% endblock %}
+
+{% block header %}Contacts List{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for contact in contacts %}
+      <li>
+        {{ contact.first_name }} {{ contact.last_name }} - {{ contact.email }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
