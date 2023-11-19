@@ -40,7 +40,7 @@ This Django-based Contact App allows users to manage and view their contacts. It
    Install project dependencies.
 
    ```bash
-   pip install -r requirements.txt
+   pip install -r r.txt
    ```
 
 5. **Run Migrations:**
